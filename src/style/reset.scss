@@ -40,6 +40,7 @@ body {
   line-height: 1.5;
   font-size: $font_size_base;
   font-family: $font_stack_body;
+  overflow-x: hidden;
 }
 
 h1,
@@ -49,6 +50,10 @@ h4,
 h5,
 h6 {
   font-family: $font_stack_header;
+}
+
+h1 {
+  font-size: $font_size_3xl;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
