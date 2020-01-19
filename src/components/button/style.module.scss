@@ -3,7 +3,7 @@
 
 .button {
   height: 48px;
-  border-radius: 5px;
+  border-radius: 3px;
   border: none;
   padding: 0 1.2rem;
   display: flex;
@@ -12,11 +12,18 @@
   font-weight: $font_weight_bold;
   background: $color_button_default;
   color: $color_button_text_default;
+  letter-spacing: $font_spacing_wide;
 }
 
 .button--contrasted {
   background: $color_button_contrasted;
   color: $color_button_text_contrasted;
+}
+
+.button--outlined {
+  background: transparent;
+  border: 2px solid $color_button_outlined;
+  color: $color_button_text_outlined;
 }
 
 .icon-container {
@@ -26,5 +33,13 @@
   height: 100%;
   align-items: center;
   justify-content: center;
+  color: $color_icon_contrasted;
+}
+
+.button--contrasted .icon-container {
+  color: $color_icon_default;
+}
+
+.button--outlined .icon-container {
   color: $color_icon_default;
 }

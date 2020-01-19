@@ -4,12 +4,14 @@ import styles from './style.module.scss'
 
 export default ({ children, onClick, icon, variant }) => {
 
-  let buttonStyle;
+  let buttonStyle
 
   if (variant === 'contrasted') {
-    buttonStyle = styles.button + ' ' + styles.buttonContrasted;
+    buttonStyle = styles.button + ' ' + styles.buttonContrasted
+  } else if (variant === 'outlined') {
+    buttonStyle = styles.button + ' ' + styles.buttonOutlined
   } else {
-    buttonStyle = styles.button;
+    buttonStyle = styles.button
   }
 
   return (

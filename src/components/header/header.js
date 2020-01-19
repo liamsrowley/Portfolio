@@ -4,13 +4,15 @@ import { IoIosMenu, IoIosClose, IoLogoGithub } from 'react-icons/io'
 import Nav from '../nav/nav'
 import Button from '../button/button'
 
+import styles from './style.module.scss'
+
 export default () => {
   return (
-    <header>
-      <div>
-        <p>Liam Rowley</p>
+    <header className={styles.header}>
+      <div className={styles.headerLeft}>
+        <p className={styles.logo}>Liam Rowley</p>
         <Nav
-          breakpoint="1280"
+          breakpoint="720"
           navContent={
             <ul>
               <li>Home</li>
@@ -21,7 +23,7 @@ export default () => {
           CloseIcon={IoIosClose}
         />
       </div>
-      <div>
+      <div className={styles.headerRight}>
         <Button icon={<IoLogoGithub />} variant="contrasted">GitHub</Button>
       </div>
     </header>

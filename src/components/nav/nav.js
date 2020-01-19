@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { useWindowSize } from '../../hooks/useWindowSize'
 
+import styles from './style.module.scss'
+
 export default ({ navContent, breakpoint, MenuIcon, CloseIcon }) => {
 
   const [width] = useWindowSize()
@@ -9,7 +11,7 @@ export default ({ navContent, breakpoint, MenuIcon, CloseIcon }) => {
 
   const renderMobileMenu = () => {
     return (
-      <div>
+      <div className={styles.mobileNav}>
         <CloseIcon onClick={toggleMenu} />
         { navContent }
       </div>
@@ -21,8 +23,8 @@ export default ({ navContent, breakpoint, MenuIcon, CloseIcon }) => {
   }
 
   return (
-    <div>
-      <nav>
+    <div className={styles.navContainer}>
+      <nav className={styles.nav}>
         { !renderMenuIcon && navContent }
       </nav>
       { renderMenuIcon && <MenuIcon onClick={toggleMenu} /> }

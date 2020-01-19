@@ -1,0 +1,25 @@
+@import '../../style/_main.scss';
+@import '../../style/_typography.scss';
+
+.header {
+  max-width: $site_width;
+  width: 100%;
+  height: 120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 4rem;
+  font-size: $font_size_lg;
+}
