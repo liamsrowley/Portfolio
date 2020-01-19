@@ -1,0 +1,30 @@
+@import '../../style/_colors.scss';
+@import '../../style/_typography.scss';
+
+.button {
+  height: 48px;
+  border-radius: 5px;
+  border: none;
+  padding: 0 1.2rem;
+  display: flex;
+  align-items: center;
+  font-size: $font_size_sm;
+  font-weight: $font_weight_bold;
+  background: $color_button_default;
+  color: $color_button_text_default;
+}
+
+.button--contrasted {
+  background: $color_button_contrasted;
+  color: $color_button_text_contrasted;
+}
+
+.icon-container {
+  margin-right: 0.5rem;
+  display: flex;
+  font-size: $font_size_lg;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: $color_icon_default;
+}

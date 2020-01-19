@@ -1,7 +1,8 @@
 import React from 'react'
-import { IoIosMenu, IoIosClose } from 'react-icons/io'
+import { IoIosMenu, IoIosClose, IoLogoGithub } from 'react-icons/io'
 
 import Nav from '../nav/nav'
+import Button from '../button/button'
 
 export default () => {
   return (
@@ -19,10 +20,9 @@ export default () => {
           MenuIcon={IoIosMenu}
           CloseIcon={IoIosClose}
         />
-
       </div>
       <div>
-        <button>GitHub</button>
+        <Button icon={<IoLogoGithub />} variant="contrasted">GitHub</Button>
       </div>
     </header>
   )
