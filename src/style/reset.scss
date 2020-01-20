@@ -1,3 +1,4 @@
+@import './_main.scss';
 @import './_colors.scss';
 @import './_typography.scss';
 
@@ -32,16 +33,21 @@ dd {
   margin: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 /* Set core body defaults */
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: $font_height_tall;
-  font-size: $font_size_base;
   font-family: $font_stack_body;
-  letter-spacing: $font_spacing_wide;
+  letter-spacing: $font_spacing_normal;
   overflow-x: hidden;
+  height: 2000px;
+  background: $color_background_contrasted;
 }
 
 h1,
@@ -111,5 +117,11 @@ select {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+@media (min-width: $site_breakpoint_md) {
+  html {
+    font-size: 18px;
   }
 }

@@ -1,0 +1,68 @@
+@import '../../style/_main.scss';
+@import '../../style/_colors.scss';
+@import '../../style/_typography.scss';
+
+.project {
+  width: 100%;
+  margin-top: -5rem;
+  z-index: 100;
+  position: relative;
+  margin-bottom: 8rem;
+}
+
+.project-image {
+  height: 320px;
+  position: relative;
+  width: 100%;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.20);
+}
+
+h3 {
+  color: $color_text_colored;
+  font-weight: $font_weight_bold;
+}
+
+p {
+  color: $color_text_default;
+  font-size: $font_size_md;
+}
+
+.actions {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 2rem;
+  bottom: 0;
+  left: 0;
+}
+
+.main-action {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.main-action button {
+  width: 100%;
+}
+
+.side-actions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.side-actions button {
+  width: 49%;
+}
+
+@media (min-width: $site_breakpoint_lg) {
+  .project {
+    width: 31.6%;
+    margin-bottom: 0;
+  }
+}

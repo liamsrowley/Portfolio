@@ -2,7 +2,6 @@ $font_stack_body: Roboto, sans-serif;
 $font_stack_header: 'Roboto Slab', Roboto, sans-serif;
 
 // Font Sizes
-$font_size_base: 16px;
 
 $font_size_2xs: 0.7222rem;
 $font_size_xs: 0.7778rem;
@@ -16,7 +15,7 @@ $font_size_3xl: 2.556rem;
 // Font Weights
 $font_weight_normal: 400;
 $font_weight_medium: 500;
-$font_weight_bold: 600;
+$font_weight_bold: 700;
 
 // Line Heights
 $font_height_normal: normal;
@@ -29,6 +28,6 @@ $font_height_taller: 2;
 
 // Letter Spacing
 $font_spacing_normal: 0;
-$font_spacing_wide: 0.025rem;
-$font_spacing_wider: 0.05rem;
-$font_spacing_widest: 0.1rem;
+$font_spacing_wide: 0.020rem;
+$font_spacing_wider: 0.040rem;
+$font_spacing_widest: 0.075rem;
