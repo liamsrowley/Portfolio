@@ -37,9 +37,10 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: $font_height_tall;
   font-size: $font_size_base;
   font-family: $font_stack_body;
+  letter-spacing: $font_spacing_wide;
   overflow-x: hidden;
 }
 
@@ -54,6 +55,23 @@ h6 {
 
 h1 {
   font-size: $font_size_3xl;
+}
+
+h2 {
+  font-size: $font_size_2xl;
+}
+
+h3 {
+  font-size: $font_size_xl;
+}
+
+p {
+  font-size: $font_size_lg;
+}
+
+svg {
+  height: 22px;
+  width: 22px;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */

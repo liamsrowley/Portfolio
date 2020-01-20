@@ -1,8 +1,8 @@
 @import '../../style/_main.scss';
+@import '../../style/_colors.scss';
 @import '../../style/_typography.scss';
 
 .header {
-  max-width: $site_width;
   width: 100%;
   height: 120px;
   display: flex;
@@ -10,9 +10,11 @@
   justify-content: space-between;
   flex-direction: row;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  padding: 0 2rem;
   z-index: 10;
+  font-weight: $font_weight_bold;
+  color: $color_text_contrasted;
 }
 
 .header-left,
@@ -22,7 +24,29 @@
   align-items: center;
 }
 
+.header-left {
+  width: 100%;
+  justify-content: space-between;
+}
+
 .logo {
   margin-right: 4rem;
   font-size: $font_size_lg;
+}
+
+.link {
+  padding: 0.4rem 0.6rem;
+}
+
+.active-link {
+  color: $color_text_default;
+  background: $color_button_contrasted;
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+}
+
+@media (min-width: $site_breakpoint_lg) {
+  .header {
+    padding: 0;
+  }
 }

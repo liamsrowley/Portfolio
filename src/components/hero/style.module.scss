@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 660px;
+  height: 600px;
   background: transparent linear-gradient(180deg, $color_indigo_800 0%, $color_indigo_900 100%) 0% 0% no-repeat padding-box;
   text-align: center;
   color: $color_text_contrasted;
@@ -23,10 +23,18 @@
   bottom: -20px;
   height: 20px;
   border-radius: 0 0 50% 50%;
+  border-bottom-left-radius: 30% 100%;
+  border-bottom-right-radius: 30% 100%;
 }
 
 .hero-title {
-  max-width: $site_width;
-  text-shadow: 0px 2px 4px #00000033;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.45);
   font-weight: $font_weight_medium;
+  font-size: $font_size_2xl;
+}
+
+@media(min-width: $site_breakpoint_md) {
+  .hero-title {
+    font-size: $font_size_3xl;
+  }
 }

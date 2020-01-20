@@ -12,7 +12,7 @@ export default ({ navContent, breakpoint, MenuIcon, CloseIcon }) => {
   const renderMobileMenu = () => {
     return (
       <div className={styles.mobileNav}>
-        <CloseIcon onClick={toggleMenu} />
+        <CloseIcon onClick={toggleMenu} className={styles.closeIcon} />
         { navContent }
       </div>
     )
@@ -24,10 +24,12 @@ export default ({ navContent, breakpoint, MenuIcon, CloseIcon }) => {
 
   return (
     <div className={styles.navContainer}>
-      <nav className={styles.nav}>
-        { !renderMenuIcon && navContent }
-      </nav>
-      { renderMenuIcon && <MenuIcon onClick={toggleMenu} /> }
+      { !renderMenuIcon && navContent && (
+        <nav className={styles.nav}>
+          { navContent }
+        </nav>
+      )}
+      { renderMenuIcon && <MenuIcon onClick={toggleMenu} className={styles.menuIcon} /> }
       { isOpen && renderMenuIcon && renderMobileMenu() }
     </div>
   )
