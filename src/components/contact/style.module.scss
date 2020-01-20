@@ -6,7 +6,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   background: $color_background_default;
   text-align: center;
   padding: 7rem 0;
@@ -31,17 +31,17 @@
   margin-top: 5rem;
 }
 
-.formGroup {
+.form-group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 }
 
-.formGroup > .inputGroup {
-  width: 32%;
+.form-group > .input-group {
+  width: 100%;
 }
 
-.inputGroup {
+.input-group {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -78,4 +78,14 @@
   font-weight: $font_weight_medium;
   background: $color_background_contrasted;
   color: $color_text_colored;
+}
+
+@media (min-width: $site_breakpoint_sm) {
+  .form-group {
+    flex-direction: row;
+  }
+
+  .form-group > .input-group {
+    width: 32%;
+  }
 }

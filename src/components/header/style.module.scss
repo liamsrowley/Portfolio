@@ -36,14 +36,22 @@
 }
 
 .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0.4rem 0.6rem;
+  margin-right: 2rem;
 }
 
 .active-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: $color_text_default;
   background: $color_button_contrasted;
   padding: 0.4rem 0.6rem;
   border-radius: 5px;
+  margin-right: 2rem;
 }
 
 @media (min-width: $site_breakpoint_lg) {

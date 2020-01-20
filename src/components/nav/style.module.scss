@@ -27,6 +27,7 @@
 
   li {
     margin-bottom: 1.4rem;
+    margin-right: 0;
   }
 
   .close-icon {
@@ -59,7 +60,7 @@ ul {
   display: flex;
 }
 
-@media(min-width: $site_breakpoint_md) {
+@media (min-width: $site_breakpoint_md) {
 
   .nav-container {
     width: 50%;
