@@ -10,8 +10,8 @@ export default ({ title, description, srcLink, siteLink, readMoreLink, imgSrc })
       <div className={styles.projectImage} style={{
           background: `url(/images/${imgSrc})`
         }} />
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <h3 className={styles.title}>{title}</h3>
+      <p className={styles.description}>{description}</p>
       <div className={styles.actions}>
         <div className={styles.mainAction}>
           <Button>View Site</Button>

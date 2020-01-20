@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 600px;
+  height: 700px;
   background: transparent linear-gradient(180deg, $color_indigo_800 0%, $color_indigo_900 100%) 0% 0% no-repeat padding-box;
   text-align: center;
   color: $color_text_contrasted;
@@ -31,6 +31,7 @@
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.45);
   font-weight: $font_weight_medium;
   font-size: $font_size_2xl;
+  color: $color_text_contrasted;
 }
 
 @media(min-width: $site_breakpoint_md) {

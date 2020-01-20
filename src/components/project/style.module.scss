@@ -4,14 +4,13 @@
 
 .project {
   width: 100%;
-  margin-top: -5rem;
   z-index: 100;
   position: relative;
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
 }
 
 .project-image {
-  height: 320px;
+  height: 260px;
   position: relative;
   width: 100%;
   display: block;
@@ -21,12 +20,12 @@
   box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.20);
 }
 
-h3 {
+.title {
   color: $color_text_colored;
   font-weight: $font_weight_bold;
 }
 
-p {
+.description {
   color: $color_text_default;
   font-size: $font_size_md;
 }
@@ -60,7 +59,12 @@ p {
   width: 49%;
 }
 
-@media (min-width: $site_breakpoint_lg) {
+@media (min-width: $site_breakpoint_md) {
+
+  .project-image {
+    height: 320px;
+  }
+
   .project {
     width: 31.6%;
     margin-bottom: 0;

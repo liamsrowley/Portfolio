@@ -57,6 +57,8 @@ h4,
 h5,
 h6 {
   font-family: $font_stack_header;
+  color: $color_text_colored;
+  font-weight: $font_weight_medium;
 }
 
 h1 {
@@ -73,6 +75,7 @@ h3 {
 
 p {
   font-size: $font_size_lg;
+  color: $color_text_default;
 }
 
 svg {
@@ -120,7 +123,7 @@ select {
   }
 }
 
-@media (min-width: $site_breakpoint_md) {
+@media (min-width: $site_breakpoint_lg) {
   html {
     font-size: 18px;
   }
