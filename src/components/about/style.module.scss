@@ -7,6 +7,7 @@
   flex-direction: column;
   justify-content: space-between;
   margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .about-left {
@@ -38,7 +39,8 @@
 @media (min-width: $site_breakpoint_md) {
   .about {
     flex-direction: row;
-    margin-top: 14rem;
+    margin-top: 12rem;
+    margin-bottom: 10rem;
   }
 
   .about-left {

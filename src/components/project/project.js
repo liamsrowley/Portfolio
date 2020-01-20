@@ -4,7 +4,7 @@ import Button from '../button/button'
 
 import styles from './style.module.scss'
 
-export default ({ title, description, srcLink, siteLink, readMoreLink, imgSrc }) => {
+export default ({ title, description, srcLink, siteLink, readMoreLink, imgSrc, requiresLoading }) => {
   return (
     <article className={styles.project}>
       <div className={styles.projectImage} style={{
@@ -20,6 +20,7 @@ export default ({ title, description, srcLink, siteLink, readMoreLink, imgSrc })
           <Button variant="outlined">Read More</Button>
           <Button variant="outlined">Source Code</Button>
         </div>
+        { requiresLoading && <span className={styles.loadWarning}>Site will take a moment to load while server spins up.</span> }
       </div>
     </article>
   )

@@ -5,6 +5,7 @@ import Hero from '../components/hero/hero'
 import Projects from '../components/projects/projects'
 import About from '../components/about/about'
 import Layout from '../components/layout/layout'
+import Contact from '../components/contact/contact'
 import '../style/reset.scss'
 
 export default () => {
@@ -17,6 +18,7 @@ export default () => {
         <Projects />
         <About />
       </Layout>
+      <Contact />
     </div>
   )
 }

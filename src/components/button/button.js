@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from './style.module.scss'
 
-export default ({ children, onClick, icon, variant }) => {
+export default ({ children, onClick, icon, variant, size }) => {
 
   let buttonStyle
 
@@ -10,8 +10,14 @@ export default ({ children, onClick, icon, variant }) => {
     buttonStyle = styles.button + ' ' + styles.buttonContrasted
   } else if (variant === 'outlined') {
     buttonStyle = styles.button + ' ' + styles.buttonOutlined
+  } else if (variant === 'darkest') {
+    buttonStyle = styles.button + ' ' + styles.buttonDarkest
   } else {
     buttonStyle = styles.button
+  }
+
+  if (size === 'large') {
+    buttonStyle += ' ' + styles.buttonLarge
   }
 
   return (
