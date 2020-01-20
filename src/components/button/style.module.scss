@@ -16,6 +16,10 @@
   justify-content: center;
 }
 
+.button:hover {
+  cursor: pointer;
+}
+
 .button--large {
   height: 58px;
 }

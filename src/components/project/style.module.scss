@@ -59,6 +59,13 @@
   width: 49%;
 }
 
+.load-warning {
+  font-size: $font_size_xs;
+  font-weight: $font_weight_medium;
+  margin-top: 0.8rem;
+  color: $color_text_default;
+}
+
 @media (min-width: $site_breakpoint_md) {
 
   .project-image {
@@ -68,5 +75,9 @@
   .project {
     width: 31.6%;
     margin-bottom: 0;
+  }
+
+  .description {
+    min-height: 100px;
   }
 }

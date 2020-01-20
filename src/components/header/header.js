@@ -21,7 +21,11 @@ export default () => {
                 <li className={styles.link}>Projects</li>
                 <li className={styles.link}>Contact</li>
                 <div className={styles.headerRight}>
-                  <Button icon={<IoLogoGithub />} variant="contrasted">GitHub</Button>
+                  <a href="https://github.com/liamsrowley?tab=repositories" target="_blank">
+                    <Button icon={<IoLogoGithub />} variant="contrasted">
+                      GitHub
+                    </Button>
+                  </a>
                 </div>
               </ul>}
             MenuIcon={IoIosMenu}
