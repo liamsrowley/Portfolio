@@ -17,7 +17,7 @@ export default ({ data }) => {
       <Header />
       <Hero title={title} />
       <Layout>
-        <div style={{ background: `url(/images/${imageUrl})` }} className={styles.projectImage} />
+        <div style={{ background: `url(/${imageUrl})` }} className={styles.projectImage} />
         <section className={styles.section}>
           <main className={styles.main}>
             <h2 className={styles.title}>{title}</h2>

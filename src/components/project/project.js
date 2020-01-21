@@ -13,7 +13,7 @@ export default ({ title, description, slug, imgSrc, siteUrl, sourceUrl, requires
         <div
           className={styles.projectImage}
           style={{
-            background: `url(/images/${imgSrc})`
+            background: `url(/${imgSrc})`
           }}
         />
       </Link>
