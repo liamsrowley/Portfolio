@@ -18,6 +18,7 @@
 
 .button:hover {
   cursor: pointer;
+  background: $color_button_light;
 }
 
 .button--large {
@@ -29,6 +30,10 @@
   color: $color_button_text_contrasted;
 }
 
+.button--contrasted:hover {
+  background: $color_button_contrasted;
+}
+
 .button--outlined {
   background: transparent;
   border: 2px solid $color_button_outlined;
@@ -38,6 +43,11 @@
 .button--darkest {
   background: $color_button_darkest;
   color: $color_text_contrasted;
+}
+
+.button--darkest:hover {
+  color: $color_button_text_contrasted;
+  background: $color_button_contrasted;
 }
 
 .button--outlined:hover {

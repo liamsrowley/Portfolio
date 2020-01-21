@@ -1,6 +1,7 @@
 import React from 'react'
 
 import SkillGroup from '../skillGroup/skillGroup'
+import ProfileImage from './selfie.jpg'
 
 import styles from './style.module.scss'
 
@@ -8,7 +9,7 @@ export default () => {
   return (
     <section className={styles.about}>
       <div className={styles.aboutLeft}>
-        <img src="/images/selfie.jpg" alt="Selfie" />
+        <img src={ProfileImage} alt="Selfie" className={styles.avatar} />
       </div>
       <div className={styles.aboutRight}>
         <h2 className={styles.title}>About Me</h2>

@@ -17,7 +17,13 @@
   background-size: cover;
   background-position: center;
   border-radius: 8px;
-  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.20);
+  box-shadow: $shadow_box_subtle;
+  transition: all 0.2s ease;
+}
+
+.project-image:hover {
+  box-shadow: $shadow_box_heavy;
+  transform: translateY(-5%);
 }
 
 .title {

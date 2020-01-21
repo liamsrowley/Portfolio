@@ -32,3 +32,8 @@
   margin-bottom: 0.5rem;
   font-weight: $font_weight_medium;
 }
+
+.item:hover {
+  cursor: default;
+  background: $color_background_light;
+}

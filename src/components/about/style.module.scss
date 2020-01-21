@@ -17,9 +17,10 @@
   align-items: flex-start;
 }
 
-.about-left img {
+.avatar {
   max-width: 100%;
   border-radius: 12px;
+  box-shadow: $shadow_box_subtle;
 }
 
 .about-right {

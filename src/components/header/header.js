@@ -13,7 +13,9 @@ export default () => {
     <Layout>
       <header className={styles.header}>
         <div className={styles.headerLeft}>
-          <p className={styles.logo}>Liam Rowley</p>
+          <Link to="/">
+            <p className={styles.logo}>Liam Rowley</p>
+          </Link>
           <Nav
             breakpoint="780"
             navContent={
