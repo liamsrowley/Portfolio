@@ -15,7 +15,7 @@ export default ({ data }) => {
   return (
     <div>
       <Header />
-      <Hero title={title}/>
+      <Hero />
       <Layout>
         <div style={{ background: `url(/images/${imageUrl})` }} className={styles.projectImage} />
         <section className={styles.section}>
@@ -27,7 +27,7 @@ export default ({ data }) => {
           <aside className={styles.actions}>
             <Button>Source Code</Button>
             <Button variant="outlined">View Site</Button>
-            { isFeatured && <Note>Site will take a moment to load while server spins up.</Note> }
+            { requiresLoading && <Note>Site will take a moment to load while server spins up.</Note> }
           </aside>
         </section>
       </Layout>

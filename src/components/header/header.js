@@ -19,8 +19,8 @@ export default () => {
             navContent={
               <ul>
                 <Link to="/" className={styles.link} activeClassName={styles.activeLink}>Home</Link>
-                <Link className={styles.link}>Projects</Link>
-                <Link to="/" className={styles.link}>Contact</Link>
+                <Link to="#projects" className={styles.link}>Projects</Link>
+                <Link to="#contact" className={styles.link}>Contact</Link>
                 <div className={styles.headerRight}>
                   <a href="https://github.com/liamsrowley?tab=repositories" target="_blank" rel="noopener noreferrer">
                     <Button icon={<IoLogoGithub />} variant="contrasted">

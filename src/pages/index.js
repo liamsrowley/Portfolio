@@ -17,9 +17,11 @@ export default ({ data }) => {
       <Hero title="I'm a front-end web developer using the power of modern
         HTML, CSS and React to create intuitive web apps." />
       <Layout>
+        <span id="projects" />
         <Projects projects={data.allMarkdownRemark.edges} />
         <About />
       </Layout>
+      <span id="contact" />
       <Contact />
     </div>
   )

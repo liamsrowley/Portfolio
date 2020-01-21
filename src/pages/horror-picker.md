@@ -6,6 +6,8 @@ requiresLoading: true
 isFeatured: true
 ---
 
-Pandas are really sweet.
-
-Here's a video of a panda eating sweets.
+Horror Picker is an app that allows you to find horror films based on their rating.
+The MovieDB API is used to fetch horror movies and then some logic is used to randomise
+the film that is chosen.
+## The Tech
+This project was built using the latest React features, including context and hooks.
