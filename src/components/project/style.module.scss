@@ -9,6 +9,10 @@
   margin-bottom: 6rem;
 }
 
+.project:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
 .project-image {
   height: 260px;
   position: relative;

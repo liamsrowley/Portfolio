@@ -9,9 +9,14 @@ import styles from './style.module.scss'
 export default ({ title, description, slug, imgSrc, siteUrl, sourceUrl, requiresLoading }) => {
   return (
     <article className={styles.project}>
-      <div className={styles.projectImage} style={{
-          background: `url(/images/${imgSrc})`
-        }} />
+      <Link to={slug}>
+        <div
+          className={styles.projectImage}
+          style={{
+            background: `url(/images/${imgSrc})`
+          }}
+        />
+      </Link>
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
       <div className={styles.actions}>

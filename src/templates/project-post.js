@@ -11,11 +11,11 @@ import Note from '../components/note/note'
 import styles from './style.module.scss'
 
 export default ({ data }) => {
-  const { title, excerpt, requiresLoading, isFeatured, imageUrl } = data.markdownRemark.frontmatter;
+  const { title, excerpt, requiresLoading, imageUrl } = data.markdownRemark.frontmatter;
   return (
     <div>
       <Header />
-      <Hero />
+      <Hero title={title} />
       <Layout>
         <div style={{ background: `url(/images/${imageUrl})` }} className={styles.projectImage} />
         <section className={styles.section}>

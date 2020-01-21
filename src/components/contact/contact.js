@@ -19,11 +19,11 @@ export default () => {
           <div className={styles.formGroup}>
             <div className={styles.inputGroup}>
               <label htmlFor="name" className={styles.label}>Your Name</label>
-              <input name="name" type="text" className={styles.input} placeholder="eg. Liam Rowley" />
+              <input name="name" type="text" className={styles.input} placeholder="eg. Liam Rowley" required />
             </div>
             <div className={styles.inputGroup}>
               <label htmlFor="email" className={styles.label}>Email Address</label>
-              <input name="email" type="email" className={styles.input} placeholder="eg. test@gmail.com "/>
+              <input name="email" type="email" className={styles.input} placeholder="eg. test@gmail.com" required />
             </div>
             <div className={styles.inputGroup}>
               <label htmlFor="tel" className={styles.label}>Contact Number</label>
@@ -32,11 +32,11 @@ export default () => {
           </div>
           <div className={styles.inputGroup}>
             <label htmlFor="subject" className={styles.label}>Subject</label>
-            <input name="subject" type="text" className={styles.input} placeholder="eg. Employment Opportunity" />
+            <input name="subject" type="text" className={styles.input} placeholder="eg. Employment Opportunity" required />
           </div>
           <div className={styles.inputGroup}>
             <label htmlFor="message" className={styles.label}>Message</label>
-            <textarea name="message" className={styles.textArea} placeholder="Type your messsage here"></textarea>
+            <textarea name="message" className={styles.textArea} placeholder="Type your messsage here" required ></textarea>
           </div>
           <Button variant="darkest" size="large">Send Message</Button>
         </form>
