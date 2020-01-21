@@ -1,0 +1,10 @@
+@import '../../style/_main.scss';
+@import '../../style/_colors.scss';
+@import '../../style/_typography.scss';
+
+.note {
+  font-size: $font_size_xs;
+  font-weight: $font_weight_medium;
+  margin-top: 0.8rem;
+  color: $color_text_default;
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Button from '../button/button'
+import Note from '../note/note'
 
 import styles from './style.module.scss'
 
@@ -27,7 +28,7 @@ export default ({ title, description, slug, imgSrc, siteUrl, sourceUrl, requires
             <Button variant="outlined">Source Code</Button>
           </a>
         </div>
-        { requiresLoading && <span className={styles.loadWarning}>Site will take a moment to load while server spins up.</span> }
+        { requiresLoading && <Note>Site will take a moment to load while server spins up.</Note> }
       </div>
     </article>
   )

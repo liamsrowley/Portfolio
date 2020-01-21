@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import { IoIosMenu, IoIosClose, IoLogoGithub } from 'react-icons/io'
 
 import Nav from '../nav/nav'
@@ -17,9 +18,9 @@ export default () => {
             breakpoint="780"
             navContent={
               <ul>
-                <li className={styles.activeLink}>Home</li>
-                <li className={styles.link}>Projects</li>
-                <li className={styles.link}>Contact</li>
+                <Link to="/" className={styles.link} activeClassName={styles.activeLink}>Home</Link>
+                <Link className={styles.link}>Projects</Link>
+                <Link to="/" className={styles.link}>Contact</Link>
                 <div className={styles.headerRight}>
                   <a href="https://github.com/liamsrowley?tab=repositories" target="_blank" rel="noopener noreferrer">
                     <Button icon={<IoLogoGithub />} variant="contrasted">
@@ -27,7 +28,8 @@ export default () => {
                     </Button>
                   </a>
                 </div>
-              </ul>}
+              </ul>
+            }
             MenuIcon={IoIosMenu}
             CloseIcon={IoIosClose}
           />
