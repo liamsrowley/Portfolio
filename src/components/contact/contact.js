@@ -13,7 +13,9 @@ export default () => {
         <p className={styles.description}>I am currently looking for employment opportunities as a front-end web developer,
         preferably using React, but I am flexible in what I can do and I'm a quick learner.
         Drop me a message and let's have a chat.</p>
-        <form className={styles.form}>
+      <form className={styles.form} name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="contact" />
           <div className={styles.formGroup}>
             <div className={styles.inputGroup}>
               <label htmlFor="name" className={styles.label}>Your Name</label>
