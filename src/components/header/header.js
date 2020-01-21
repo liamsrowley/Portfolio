@@ -21,7 +21,7 @@ export default () => {
                 <li className={styles.link}>Projects</li>
                 <li className={styles.link}>Contact</li>
                 <div className={styles.headerRight}>
-                  <a href="https://github.com/liamsrowley?tab=repositories" target="_blank">
+                  <a href="https://github.com/liamsrowley?tab=repositories" target="_blank" rel="noopener noreferrer">
                     <Button icon={<IoLogoGithub />} variant="contrasted">
                       GitHub
                     </Button>

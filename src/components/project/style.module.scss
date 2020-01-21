@@ -55,8 +55,12 @@
   justify-content: space-between;
 }
 
-.side-actions button {
+.side-actions a {
   width: 49%;
+}
+
+.side-actions button {
+  width: 100%;
 }
 
 .load-warning {
