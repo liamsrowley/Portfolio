@@ -7,6 +7,7 @@ import Contact from '../components/contact/contact'
 import Layout from '../components/layout/layout'
 import Button from '../components/button/button'
 import Note from '../components/note/note'
+import SEO from '../components/seo/seo'
 
 import styles from './style.module.scss'
 
@@ -14,6 +15,7 @@ export default ({ data }) => {
   const { title, excerpt, requiresLoading, imageUrl } = data.markdownRemark.frontmatter;
   return (
     <div>
+      <SEO title={title} description={excerpt} />
       <Header />
       <Hero title={title} size="small" />
       <Layout>

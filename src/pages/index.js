@@ -7,12 +7,13 @@ import Projects from '../components/projects/projects'
 import About from '../components/about/about'
 import Layout from '../components/layout/layout'
 import Contact from '../components/contact/contact'
+import SEO from '../components/seo/seo'
 import '../style/reset.scss'
 
 export default ({ data }) => {
-  console.log(data.allMarkdownRemark.edges)
   return (
     <div>
+      <SEO title="Home" />
       <Header />
       <Hero title="I'm a front-end web developer using the power of modern
         HTML, CSS and React to create intuitive web apps." />
