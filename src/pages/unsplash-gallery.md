@@ -3,7 +3,7 @@ title: "Unsplash Image Gallery"
 excerpt: "A small image searching app with endless loading that uses the Unsplash API. Powered by React"
 imageUrl: "unsplash-image.jpg"
 sourceUrl: "https://github.com/liamsrowley/unsplash-image-gallery"
-siteUrl: "https://google.com"
+siteUrl: "https://unsplash-image-gallery.herokuapp.com/"
 requiresLoading: true
 isFeatured: true
 ---

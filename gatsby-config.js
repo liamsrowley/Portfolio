@@ -16,6 +16,15 @@ module.exports = {
         name: 'src',
         path: `${__dirname}/src/`
       }
+    },
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: [
+          'roboto\:400,500,600,700',
+          'roboto slab\:500,600,700'
+        ]
+      }
     }
   ]
 }
