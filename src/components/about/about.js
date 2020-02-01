@@ -12,12 +12,11 @@ export default () => {
         <img src={ProfileImage} alt="Selfie" className={styles.avatar} />
       </div>
       <div className={styles.aboutRight}>
-        <h2 className={styles.title}>About Me</h2>
-        <p className={styles.description}>I've always been interested in technology, so when I first discovered
-          the web development world it was immediately apparent to me that I
-          wanted to get involved. I wanted to do this for a living. Fast forward
-          a number of years and here I am now, with knowledge of multiple technologies,
-          techniques and patterns and a constant desire to learn and improve.</p>
+        <h2 className={styles.title}>Hello.</h2>
+        <p className={styles.description}>I'm Liam, a front-end web developer currently living in Newcastle upon Tyne.
+        I'm on a constant mission to create professional, intuitive experiences using powerful web technologies that I can
+        be proud of. I use my passion for web development to learn new technologies, understand best practices and improve
+        my craft.</p>
         <SkillGroup
           title="Front-End"
           items={['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Gatsby']}

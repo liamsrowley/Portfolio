@@ -41,6 +41,7 @@ export const query = graphql`
             imageUrl
             sourceUrl
             siteUrl
+            techUsed
           }
           html
           fields {
