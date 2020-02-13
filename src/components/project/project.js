@@ -11,7 +11,7 @@ export default ({ title, description, slug, imgSrc, siteUrl, sourceUrl, requires
       <div
         className={styles.projectImage}
         style={{
-          background: `url(/${imgSrc})`
+          backgroundImage: `url(/${imgSrc})`
         }}
       />
       <h3 className={styles.title}>{title}</h3>

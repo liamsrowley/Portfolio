@@ -8,7 +8,7 @@ export default ({ projects }) => {
   return (
     <section className={styles.projects}>
       { projects.map(({ node }) => {
-        const { title, excerpt, requiresLoading, imageUrl, sourceUrl, siteUrl, techUsed } = node.frontmatter
+        const { title, excerpt, requiresLoading, imageUrl, sourceUrl, siteUrl } = node.frontmatter
         return (
           <Project
             key={node.id}
@@ -19,7 +19,6 @@ export default ({ projects }) => {
             slug={node.fields.slug}
             siteUrl={siteUrl}
             sourceUrl={sourceUrl}
-            techUsed={techUsed}
           />
         )
       })}
