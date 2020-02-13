@@ -3,7 +3,7 @@ title: "Horror Picker"
 excerpt: "A simple horror picker app that helps you find good films. Powered by React"
 imageUrl: "horror-image.jpg"
 sourceUrl: "https://festive-jepsen-d6c82c.netlify.com/"
-siteUrl: "https://festive-jepsen-d6c82c.netlify.com/"
+siteUrl: "https://github.com/liamsrowley/horror-picker"
 requiresLoading: true
 isFeatured: true
 ---

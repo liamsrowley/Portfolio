@@ -25,11 +25,6 @@
   transition: all 0.2s ease;
 }
 
-.project-image:hover {
-  box-shadow: $shadow_box_heavy;
-  transform: translateY(-5%);
-}
-
 .title {
   color: $color_text_colored;
   font-weight: $font_weight_bold;
